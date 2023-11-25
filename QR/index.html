@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" />
+
+  <title>Trip Planner - Travel Made Easy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Work+Sans:wght@200;400;500&display=swap"
+    rel="stylesheet">
+
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link href="/QR/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="bg-container">
+      <div class="bubbles-container">
+        <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+          <g class="bubbles-large" stroke-width="8">
+            <g>
+              <g transform="translate(10 940)">
+                <circle cx="35" cy="35" r="35" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(373 940)">
+                <circle cx="35" cy="35" r="35" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(408 940)">
+                <circle cx="35" cy="35" r="35" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(621 940)">
+                <circle cx="35" cy="35" r="35" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(179 940)">
+                <circle cx="35" cy="35" r="35" />
+              </g>
+            </g>
+          </g>
+          <g class="bubbles-small" stroke-width="4">
+            <g>
+              <g transform="translate(147 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(255 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(573 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(429 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(91 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(640 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(321 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(376 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(376 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+            <g>
+              <g transform="translate(497 984)">
+                <circle cx="15" cy="15" r="15" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  <p></p>
+
+  <div class="buttons">
+    <a href="/CountryInfo/index.html">  
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Country Info      
+      </a>    
+
+       <a href="/Distance/index.html"> 
+         <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Find Distance & ETA
+      </a>
+
+       <a href="/Weather/index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Check Current Weather
+      </a>
+
+    <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Generate QR Code
+      </a>      
+  </div>  
+
+  <main>
+    <h1></h1>   
+
+    <section id="qr-code-settings" class="container container-front">
+
+      <header>
+        <h2>Generate your QR Code</h2>
+        <h3>Adjust the settings below to make your QR Code look as you want</h3>
+      </header>
+
+      <div>
+        <div class="setting">
+          <label for="data">Text / URL</label>
+          <span class="sub-label">Include text or a URL you want the QR Code to lead to</span>
+          <input type="text" name="data" id="data" min="0" max="900" required />
+        </div>
+
+        <div class="colors">
+          <div class="setting">
+            <label for="color">Main Color</label>
+            <input id="color" type="color" value="#000000" />
+            <span id="color-value">#000000</span>
+          </div>
+
+          <div class="setting">
+            <label for="bg-color">Background Color</label>
+            <input id="bg-color" type="color" value="#c7c7c7" />
+            <span id="bg-color-value">#c7c7c7</span>
+          </div>
+        </div>
+
+        <div class="setting">
+          <label for="size">Size</label>
+          <span id="size-value" class="sub-label">200 x 200</span>
+          <div class="slider">
+            <input name="size" id="size" type="range" value="200" min="100" max="1000" step="100">
+          </div>
+        </div>
+
+        <div class="setting">
+          <label for="margin">Margin</label>
+          <span id="margin-value" class="sub-label">1 px</span>
+          <div class="slider">
+            <input type="range" name="margin" id="margin" min="0" max="50" value="1" />
+          </div>
+        </div>
+
+        <div class="setting">
+          <fieldset>
+            <legend>Image Format</legend>
+            <div>
+              <input type="radio" id="png" name="format" value="png" id="format" checked />
+              <label for="png">PNG</label>
+            </div>
+            <div>
+              <input type="radio" id="gif" name="format" value="gif" id="format" />
+              <label for="gif">GIF</label>
+            </div>
+            <div>
+              <input type="radio" id="jpeg" name="format" value="jpeg" id="format" />
+              <label for="jpeg">JPEG</label>
+            </div>
+            <div>
+              <input type="radio" id="jpg" name="format" value="jpg" id="format" />
+              <label for="jpg">JPG</label>
+            </div>
+            <div>
+              <input type="radio" id="tiff" name="format" value="tiff" id="format" />
+              <label for="tiff">TIFF</label>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+      <div class="cta">
+        <button id="cta" type="submit" disabled>Generate QR Code</button>
+      </div>
+    </section>
+    
+    <section id="qr-code-result" class="container container-back">
+      <header>
+        <h2>Your QR code is ready!</h2>
+      </header>
+
+      <div class="setting">
+        <img src="" alt="qr-code" id="qr-code-image" name="qr-code">
+      </div>
+
+      <div class="info">
+        <p>Right click on the image and select <b>"Save Image As"</b> to download the image
+        </p>
+        <p>Or need to make some changes?</p>
+        <div class="cta">
+          <button id="edit" type="submit">
+            Go back</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/QR/script.js"></script>
+</body>
+</html>

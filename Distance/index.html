@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Travel Planner - Travel Made Easy</title>
+</head>
+
+<body>
+  <div class="bg-container">
+    <div class="bubbles-container">
+      <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+        <g class="bubbles-large" stroke-width="8">
+          <g>
+            <g transform="translate(10 940)">
+              <circle cx="35" cy="35" r="35" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(373 940)">
+              <circle cx="35" cy="35" r="35" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(408 940)">
+              <circle cx="35" cy="35" r="35" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(621 940)">
+              <circle cx="35" cy="35" r="35" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(179 940)">
+              <circle cx="35" cy="35" r="35" />
+            </g>
+          </g>
+        </g>
+        <g class="bubbles-small" stroke-width="4">
+          <g>
+            <g transform="translate(147 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(255 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(573 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(429 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(91 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(640 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(321 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(376 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(376 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+          <g>
+            <g transform="translate(497 984)">
+              <circle cx="15" cy="15" r="15" />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1></h1>
+
+    <div class="top-buttons">
+      <a href="/CountryInfo/index.html">  
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Country Info      
+      </a>    
+
+       <a href="#"> 
+         <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Find Distance & ETA
+      </a>
+
+       <a href="/Weather/index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Check Current Weather
+      </a>
+
+    <a href="/QR/index.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Generate QR Code
+      </a>      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="anothercontainer">
+      <div class="search-wrapper">
+        <input type="text" id="origin" placeholder="Choose a starting point" />
+        <input type="text" id="dest" placeholder="Choose destination" />
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <button class="button" type="button" onclick="calcRoute();">Search</button>
+        <button class="button" type="button" onclick="clearRoute();">Clear</button>
+      </div>
+
+      <br>
+
+      <div id="output" class="result-table"></div>
+      <div class="container-map" id="google-map"></div>
+    </div>
+</body>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFQBX6lyDPzkYnSy2rKP7ym0jmJ9q1nbE&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/Distance/script.js"></script>
+
+</html>
