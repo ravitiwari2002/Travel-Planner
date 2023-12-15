@@ -2,7 +2,7 @@
 
 Travel Planner is a JavaScript application designed to make travel planning efficient and convenient. It provides a range of features to assist with various aspects of travel planning.
 
-## Features Implemented
+## Features
 
 - **Country Info:** Provides information about the destination country to help you prepare for your trip.
 - **Distance and ETA Calculation:** Calculates distances and estimated times of arrival (ETAs) for your travel routes.
