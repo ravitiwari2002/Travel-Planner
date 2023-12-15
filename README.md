@@ -9,6 +9,8 @@ Travel Planner is a JavaScript application designed to make travel planning effi
 - **Real-Time Weather Updates:** Offers real-time weather updates to help you plan your activities.
 - **QR Code Generation:** Allows you to input a URL and generates a QR code for it. This can be particularly useful for saving travel-related websites or resources.
 
+https://github.com/ravitiwari2002/Travel-Planner/assets/81186121/7ed8325e-8c65-4215-b6f5-4f9c94f31aec
+
 ## License
 
     Copyright [2023] [Ravi Tiwari]
